@@ -4,9 +4,10 @@ public class RThreeCategory {
 
 	private int id;
 	private String category_name;
-	private String author;
+	private User author;
 	private String creation_date;
 	private String updation_date;
+	private RThreeUserLocation rtThreeUserLocation;
 	
 	public int getId() {
 		return id;
@@ -20,10 +21,10 @@ public class RThreeCategory {
 	public void setCategory_name(String category_name) {
 		this.category_name = category_name;
 	}
-	public String getAuthor() {
+	public User getAuthor() {
 		return author;
 	}
-	public void setAuthor(String author) {
+	public void setAuthor(User author) {
 		this.author = author;
 	}
 	public String getCreation_date() {
@@ -38,5 +39,12 @@ public class RThreeCategory {
 	public void setUpdation_date(String updation_date) {
 		this.updation_date = updation_date;
 	}
+	public RThreeUserLocation getRtThreeUserLocation() {
+		return rtThreeUserLocation;
+	}
+	public void setRtThreeUserLocation(RThreeUserLocation rtThreeUserLocation) {
+		this.rtThreeUserLocation = rtThreeUserLocation;
+	}
 	
+
 }

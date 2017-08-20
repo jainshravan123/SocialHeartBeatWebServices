@@ -10,8 +10,9 @@ public class RThreeCategorialItem {
 	private int most_useful;
 	private String creation_date;
 	private String updation_date;
-	private String author;
+	private User author;
 	private String reference;
+	private RThreeType rThreeType;
 	
 	public int getId() {
 		return id;
@@ -61,10 +62,10 @@ public class RThreeCategorialItem {
 	public void setUpdation_date(String updation_date) {
 		this.updation_date = updation_date;
 	}
-	public String getAuthor() {
+	public User getAuthor() {
 		return author;
 	}
-	public void setAuthor(String author) {
+	public void setAuthor(User author) {
 		this.author = author;
 	}
 	public String getReference() {
@@ -73,6 +74,11 @@ public class RThreeCategorialItem {
 	public void setReference(String reference) {
 		this.reference = reference;
 	}
-	
-	
+	public RThreeType getrThreeType() {
+		return rThreeType;
+	}
+	public void setrThreeType(RThreeType rThreeType) {
+		this.rThreeType = rThreeType;
+	}
+
 }
